@@ -11,7 +11,7 @@
 - [메인화면](#메인화면)
   - [네비게이션바](#네비게이션바)
   - [업로드페이지](#업로드페이지)
-    - [도움말](#도움말)
+    - [도움말버튼](#도움말버튼)
     - [업로드박스](#업로드박스)
     - [Rules](#rules)
     - [Character_data](#character_data)
@@ -111,7 +111,7 @@ Q. 술은 몇가지를 인식하나요?
 ![메인화면](image/main_upload.png)
 
 
-> ### 도움말
+> ### 도움말버튼
 ---
 * 도움말 버튼을 클릭하면 다음의 화면이 나타납니다.
 
@@ -149,18 +149,18 @@ Q. 술은 몇가지를 인식하나요?
 * 모델에 없는 종류의 술을 업로드 하면, 다음과 같이 인식 할 수 없다는 경고창이 나타납니다.
 
 ![model_wrong](image/main_upload_wrong.png)
-> ### Rules
+
+## CBTI
 ---
-* 길드의 규칙을 pdf파일로 보여줍니다.
+* 칵테일 입문자를 위한 3가지 질문을 통해 질문에 맞는 선호도에 따라 칵테일을 추천해주는 시스템입니다.
 
-![Rule](Cozem/read_me_image/guild_page_2.png)
+![cbti_main](image/cbti_main.png)
 
-> ### Character_data
-* 닉네임을 입력하면 Maple.gg사이트의 검색결과를 보여줍니다.
+> ### 옵션 선택
 
-![Character_data](Cozem/read_me_image/guild_page_3.png)
+* 질문에 해당하는 옵션을 클릭하면 다음과 같이 주황색으로 체크되면서, 다음 질문으로 넘어갑니다.
 
-![Character_data](Cozem/read_me_image/guild_page_3-1.png)
+![cbti_select](image/cbti_option_selected.png)
 
 ## 직위관리 페이지
 ---
