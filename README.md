@@ -82,7 +82,7 @@ Q. 술은 몇가지를 인식하나요?
 
 * 우측에는 아이콘을 클릭해 회원가입 및 로그인 메뉴가 있습니다.
 
-![메인화면](Myun9hyun/Si-Project-front/image/homepage.png)
+![메인화면](Si-Project-front/image/homepage.png)
 
 
 ## 사이드바
