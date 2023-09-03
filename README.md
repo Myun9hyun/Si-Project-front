@@ -41,38 +41,38 @@ Q. 술은 몇가지를 인식하나요?
 ---
 ### FrontEnd
 
-**REACT**
+- REACT
 
-**JAVASCRIPT**
+- JAVASCRIPT
 
-**CSS**
+- CSS
 
-**HTML**
+- HTML
 
 
 ### BACKEND
 
-**JAVA**
+- JAVA
 
-**PYTHON**
+- PYTHON
 
-**SPRINGBOOT**
+- SPRINGBOOT
 
-**GRADLE**
+- GRADLE
 
 ### VISION
 
-**FLASK**
+- FLASK
 
-**PYTHON**
+- PYTHON
 
-**YOLO**
+- YOLO
 
 ### DB
 
-**Maria DB**
+- Maria DB
 
-**AWS RDS**
+- AWS RDS
 
 ## 메인화면
 ---
@@ -140,6 +140,8 @@ Q. 술은 몇가지를 인식하나요?
 
 ![model_result](image/main_upload_modelreturn.png)
 
+* 추천 칵테일 페이지에는 칵테일 한글명, 영문명, 인식한 술의 종류, 인식한 술의 이름, 재료, 가니쉬(장식), 제조법이 나타납니다.
+
 * 추천 칵테일은 한번의 리스트에 8개까지 구현했으며, 각각 이미지를 클릭하면 해당하는 사진의 맞는 정보가 표시됩니다.
 
 * 또한 8개가 넘는 결과가 나오면, next버튼으로 다음 페이지도 볼 수 있으며, prev버튼을 통해 이전의 페이지로 이동할 수도 있습니다.
@@ -162,15 +164,70 @@ Q. 술은 몇가지를 인식하나요?
 
 ![cbti_select](image/cbti_option_selected.png)
 
-## 직위관리 페이지
----
-* 직위관리 페이지는 총 5개의 탭으로 이루어져 있습니다.
+> ### 결과페이지
 
-* 각 탭의 소개는 기능을 소개하면서 진행하겠습니다.
+* 선택한 옵션에 따른 결과는 다음처럼 나타납니다.
 
-> ### Cozem
+* 더 많은 결과가 나타나면 스크롤을 통해 아래로 내릴 수 있습니다.
+
+* 선택한 옵션 아래에 있는 Reset 버튼을 누르면, 옵션이 초기화 되면서 맨 처음 질문으로 돌아갑니다.
+
+![cbti_resultpage](image/cbti_resultpage.png)
+
+
+## 칵테일 검색페이지
 ---
-* 먼저 코어젬스톤 탭입니다.
+* 칵테일 검색페이지의 초기 화면은 다음과 같습니다.
+
+![search](image/search_main.png)
+
+* 칵테일 검색페이지에서는 총 3개의 카테고리를 통해 검색할 수 있습니다.
+
+- 술이름
+- 주종
+- 칵테일이름
+
+* 술 이름은 술 병에 적혀있는 이름을 나타냅니다. 예를들면 앱솔루트보드카, 피치트리 등이 있습니다.
+
+* 주종은 술 이름의 분류를 의미합니다. 예를들어 앱솔루트 보드카라면 보드카, 헤네시XO라면 코냑등이 있습니다.
+
+* 칵테일 이름은 칵테일의 이름입니다. 모히토, 좀비등이 있습니다.
+
+> ### 칵테일 이름
+---
+* 먼저 칵테일 이름 카테고리입니다.
+
+* 칵테일 이름은 영문으로 입력해도 인식하고, 한글로 입력해도 인식해서 나타납니다.
+
+![cockname_english](image/search_cockname_english.png)
+
+![cockname_korean](image/search_cockname_korean.png)
+
+* 또 나타난 결과 카드 목록에서, 마우스를 카드 위로 올리면 해당하는 칵테일의 재료를 카드 뒷면으로 뒤집어서 보여줍니다.
+
+![cock_flip](image/search_result_flipback.png)
+
+* 추가로 제조법, 가니쉬 등의 정보를 확인하고 싶다면 뒤집힌 카드를 클릭하면 팝업으로 보여줍니다.
+
+![card_click](image/search_result_cardclick.png)
+
+> ### 주종
+---
+* 다음은 주종 카테고리입니다.
+
+* 주종 카테고리는 술의 분류에 해당하는 이름을 입력하면 그에 맞는 결과를 검색해 보여줍니다.
+
+![search_category](image/search_category_liquorname.png)
+
+
+> ### 술 이름
+---
+* 다음은 술 이름 카테고리입니다.
+
+* 술 이름 카테고리는 술의 판매명을 입력하면 그에 맞는 결과를 검색해 보여줍니다.
+
+![search_liquor](image/search_category_liquorname_result.png)
+
 
 * 아기자기 길드는 주간 길드컨텐츠 이행에 따른 점수에 대해 보상을 지급해주는 '위클리 이벤트' 제도를 시행하고 있습니다.
 
