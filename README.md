@@ -28,54 +28,61 @@
 
 ## Q&A
 ---
-Q. 왜 있는 캐릭터가 검색결과가 안나오죠?
-- A. maple.gg 검색결과를 기반으로 반환하기 때문에, maple.gg에 업데이트되지 않은 캐릭터는 검색이 안될 수도 있습니다.
+Q. 몇가지의 칵테일 종류가 있나요?
+- A. 국제 바텐더 협회(IBA)인증 칵테일 90개 + 국내 후기 가장 많은 칵테일 바 3개에서 판매하는 칵테일 78개 = 총 168개의 칵테일이 있습니다.
 
 Q. 어떤 기능들이 있나요?
 - A. 아래의 내용을 참고해주세요.
 
-Q. 비밀 번호는 뭔가요?
-- A. 1234 입니다.
+Q. 술은 몇가지를 인식하나요?
+- A. 25개 입니다.
 
 ## 사용스택
 ---
 ### FrontEnd
 
 **REACT**
+
 **JAVASCRIPT**
+
 **CSS**
+
 **HTML**
 
 
 ### BACKEND
 
 **JAVA**
+
 **PYTHON**
+
 **SPRINGBOOT**
+
 **GRADLE**
 
 ### VISION
 
 **FLASK**
+
 **PYTHON**
+
 **YOLO**
 
 ### DB
 
 **Maria DB**
+
 **AWS RDS**
 
 ## 메인화면
 ---
-* 페이지 링크에 접속하면 바로 보이는 화면입니다.
+* 웹서비스에 접속하면 바로 보이는 화면입니다.
 
-* 페이지 링크 https://agizagi-by-myun9hyun.streamlit.app/
+* 상단의 Navigation Bar에는 좌측에 로고, Seacrh, CBTI, Commutnity가 있습니다.
 
-* 배너에는 길드이미지, 배너 우측에는 버전과 워터마크
+* 우측에는 아이콘을 클릭해 회원가입 및 로그인 메뉴가 있습니다.
 
-* 좌측에는 각종 기능이 담긴 사이드바가 있습니다.
-
-![메인화면](Cozem/read_me_image/main_page.png)
+![메인화면](Myun9hyun/Si-Project-front/image/homepage.png)
 
 
 ## 사이드바
