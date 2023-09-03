@@ -166,6 +166,7 @@ Q. 술은 몇가지를 인식하나요?
 ![cbti_select](image/cbti_option_selected.png)
 
 * 질문은 다음과 같이 두가지가 더 있습니다.
+
 ![cbti_option2](image/cbti_option2.png)
 ![cbti_option3](image/cbti_option3.png)
 
