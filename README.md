@@ -13,16 +13,16 @@
   - [업로드페이지](#업로드페이지)
     - [도움말버튼](#도움말버튼)
     - [업로드박스](#업로드박스)
-    - [Rules](#rules)
-    - [Character_data](#character_data)
-  - [직위관리](#직위관리-페이지)
-    - [Cozem](#cozem)
-    - [Warning](#warning)
-    - [Pause](#pause)
-    - [Donated_Cozem](#donated_cozem)
-  - [아카이브](#아카이브)
-  - [이것저것](#이것저것)
-  - [피드백남기기](#피드백남기기)
+  - [CBTI](#CBTI)
+    - [옵션 선택](#옵션-선택)
+  - [결과페이지](#결과페이지)
+  - [칵테일-검색페이지](#칵테일-검색페이지)
+    - [칵테일 이름](#칵테일-이름)
+    - [주종](#주종)
+    - [술-이름](#술-이름)
+  - [커뮤니티](#커뮤니티)
+  - [회원가입](#회원가입)
+  - [로그인](#로그인)
 ## 참고
 ---
 
@@ -152,6 +152,7 @@ Q. 술은 몇가지를 인식하나요?
 
 ![model_wrong](image/main_upload_wrong.png)
 
+
 ## CBTI
 ---
 * 칵테일 입문자를 위한 3가지 질문을 통해 질문에 맞는 선호도에 따라 칵테일을 추천해주는 시스템입니다.
@@ -163,6 +164,11 @@ Q. 술은 몇가지를 인식하나요?
 * 질문에 해당하는 옵션을 클릭하면 다음과 같이 주황색으로 체크되면서, 다음 질문으로 넘어갑니다.
 
 ![cbti_select](image/cbti_option_selected.png)
+
+* 질문은 다음과 같이 두가지가 더 있습니다.
+![cbti_option2](image/cbti_option2.png)
+![cbti_option3](image/cbti_option3.png)
+
 
 > ### 결과페이지
 
@@ -219,7 +225,6 @@ Q. 술은 몇가지를 인식하나요?
 
 ![search_category](image/search_category_liquorname.png)
 
-
 > ### 술 이름
 ---
 * 다음은 술 이름 카테고리입니다.
@@ -229,116 +234,72 @@ Q. 술은 몇가지를 인식하나요?
 ![search_liquor](image/search_category_liquorname_result.png)
 
 
-* 아기자기 길드는 주간 길드컨텐츠 이행에 따른 점수에 대해 보상을 지급해주는 '위클리 이벤트' 제도를 시행하고 있습니다.
-
-* 길드컨텐츠는 각각 주간미션, 지하수로, 플래그가 있습니다.
-* 그중에서 지하수로는 500점당 코어젬스톤 1개, 플래그는 500점 까지는 0개, 500점부터 750점 까지는 1개, 750점 부터 1000점 미만까지는 2개, 1000점은 3개를 지급하고 있습니다.
-* 또한, 아기자기 길드 규정상 노블레스 스킬을 사용하려면 주간미션 3점, 플래그와 지하수로는 1점 이상 기록해야 합니다.
-* 예외로, 주간미션이 5점인 경우, 지하수로가 1500점이상이거나, 플래그가 650점 이상인 경우에는 각각 플래그와 지하수로를 이행하지 않더라도 노블레스 스킬을 사용할 수 있습니다.
-* 위와 같은 규정에 따라 점수에 따른 코어젬스톤 지급 갯수 계산, 노블레스 스킬 사용가능/불가능 여부, 총 지급해야하는 코어젬스톤 갯수와 간부진들이 분배해서 몇개를 나눠주어야 하는지 계산하는 기능을 포함하고 있습니다.
-
-
-* 기능선택에는 다음의 사진과 같은 기능이 있습니다.
-![이름추가](Cozem/read_me_image/grade_page_1.png)
-* 이름추가는 길드원들의 명단을 표에 저장하는 기능입니다.
-
-![데이터추가](Cozem/read_me_image/grade_page_2.png)
-* 데이터추가는 추가해둔 이름을 바탕으로, 본캐인지, 부캐인지 선택받고, 길드컨텐츠 점수를 입력합니다. 입력해둔 점수를 바탕으로 코어젬스톤 갯수를 계산해서 표에 저장해줍니다.
-
-![데이터조회](Cozem/read_me_image/grade_page_3.png)
-* 데이터조회는 클릭하면 저장한 데이터를 확인할 수 있습니다.
-
-![데이터삭제](Cozem/read_me_image/grade_page_4.png)
-* 데이터삭제는 잘못 입력한 데이터를 표에서 원하는 행의 번호를 입력하면 삭제해주는 기능을 가지고 있습니다.
-
-![데이터초기화](Cozem/read_me_image/grade_page_5.png)
-* 데이터초기화는 한번에 데이터를 초기화 하고자 할때 사용합니다.
-
-![데이터초기화](Cozem/read_me_image/grade_page_6.png)
-
-* 노블사용/제한은 계산한 값에 따라 노블레스 스킬을 사용가능한지, 불가능한지를 계산해서 명단을 보여줍니다.
-
-![노블사용](Cozem/read_me_image/grade_page_7-1.png)
-
-![노블제한](Cozem/read_me_image/grade_page_7-2.png)
-
-* 위클리 코젬계산은 전체의 코젬총합을 계산해주고, 그에따라 5명의 간부진이 나눠내야하는 코어젬스톤의 갯수를 보여줍니다.
-
-![코젬계산](Cozem/read_me_image/grade_page_8-1.png)
-
-![코젬분배](Cozem/read_me_image/grade_page_8-2.png)
-
-![코젬계산](Cozem/read_me_image/grade_page_8-3.png)
-
-* 데이터 다운로드는 입력해둔 표의 데이터를 xlsx 파일로 다운로드 받을 수 있는 탭입니다.
-
-![엑셀](Cozem/read_me_image/grade_page_9.png)
-
-> ### Warning
+## 커뮤니티
 ---
-* 경고자 관리 탭입니다.
-* 노블레스 스킬 사용제한에 걸린 길드원은 경고를 1회 얻습니다.
+* 다음은 커뮤니티 페이지입니다.
 
-* 경고가 총 3회 될 경우에는 길드에서 퇴출됩니다.
+![community](image/community_home.png)
 
-![경고](Cozem/read_me_image/grade_page_2_3.png)
+* 글을 클릭하면 글의 내용을 확인할 수 있습니다.
+* 아래에 댓글도 추가할 수 있으며, 작성자만 글과 댓글을 삭제 및 수정이 가능합니다.
+* 작성한 댓글 및 게시글은 작성한 날짜와 작성자가 표시됩니다.
 
-![경고](Cozem/read_me_image/grade_page_2_2.png)
+![community_write](image/community_write.png)
 
-![경고](Cozem/read_me_image/grade_page_2_1.png)
+* 게시판의 모든 글과 댓글은 회원가입 후 로그인 한 사용자만 작성이 가능합니다.
+* 로그인 하지 않으면 작성할 수 없다는 경고문이 나타납니다.
 
-> ### Pause
+![community_no_login](image/community_nologin.png)
+
+* 게시글은 글쓰기 버튼을 누르고 난 후 다음의 업로드 양식에 따라 글을 작성할 수 있습니다.
+
+![community_upload](image/community_upload.png)
+
+* 다음처럼 이름, 내용, 작성자에 따라 카테고리를 선택 후 검색할 수 있습니다
+
+![community_search](image/community_search.png)
+
+
+## 회원가입
 ---
-* 유예자 관리 탭입니다.
+* 다음은 회원가입 페이지입니다.
 
-* 개인사정으로 길드 컨텐츠에 참여하게 되지 못할 경우에 사용하는 탭입니다.
-* 인정될 만한 사유의 경우, 유예자 명단에 등록하고, 해당 기간 동안 길드컨텐츠는 면제됩니다.
+![join](image/joinform.png)
 
-![유예](Cozem/read_me_image/grade_page_3_1.png)
+* 회원가입에는 ID와 닉네임을 중복검사하는 버튼이 있으며, 버튼을 클릭해 중복검사를 해야지 가입이 가능합니다.
 
-![유예](Cozem/read_me_image/grade_page_3_2.png)
+* 미검사시 다음과 같이 중복검사를 실시하라는 알림이 나타납니다.
 
-> ### Donated_cozem
+![join_nocheck](image/join_nocheck.png)
+
+* ID와 닉네임을 중복 검사 후 중복되면 다음과 같은 알림이 나타납니다.
+
+![join_idcheck_wrong](image/join_idcheck_wrong.png)
+![join_nickcheck_wrong](image/join_nickcheck_wrong.png)
+
+* ID와 닉네임 중복 검사 후 중복되지 않으면 다음과 같이 가입이 가능하다는 알림이 나타납니다.
+
+![join_idcheck_correct](image/join_idcheck_correct.png)
+![join_nickcheck_correct](image/join_nickcheck_correct.png)
+
+* 회원가입 진행 중에 비밀번호 입력란과 비밀번호 확인란의 입력한 값이 다르면, 입력 값이 다르다는 문구가 나타납니다.
+
+![join_password_nomatch](image/join_password_nomatch.png)
+
+* 일치하면 사라집니다
+
+![join_password_match](image/join_password_match.png)
+
+* 모든 절차 완료 후 제출 버튼을 누르면 가입이 완료됩니다.
+
+![join_success](image/join_complete.png)
+
+## 로그인
 ---
-* 간혹 위클리 이벤트나, 개인적으로 길드를 위해 코젬을 기부해주는 분들의 기부내역을 정리해두는 페이지 입니다.
+* 다음은 로그인 페이지입니다.
 
-* 기부받은 코어젬스톤을 길드 이벤트에 사용할 경우, 사용 내역도 기록합니다.
+![loginform](image/loginform.png)
 
-![기부](Cozem/read_me_image/grade_page_4-1.png)
+* 로그인을 완료하면, 다음과 같이 로그인 됩니다.
 
-![사용](Cozem/read_me_image/grade_page_4-2.png)
-
-![조회](Cozem/read_me_image/grade_page_4-3.png)
-
-
-## 아카이브
----
-* 길드에서 디자인을 담당해주는 간부인 "**릎샴**" 님의 재능기부로 만들어진 포스터를 저장해두는 페이지입니다.
-
-* 포스터/길드사진 중에서 선택할 수 있습니다.
-
-* 포스터를 선택하면 포스터의 내역을 볼 수 있습니다.
-
-![포스터](Cozem/read_me_image/archive1.png)
-
-* 길드사진을 선택하면 길드원들끼리의 사진을 볼수 있습니다.
-
-![길드사진](Cozem/read_me_image/archive2.png)
-
-## 이것저것
----
-* 이 페이지는 지나간 이벤트 내역등을 저장해둔 탭입니다.
-
-* 캡쳐 사진으로 일부 보여드리겠습니다.
-
-![이것저것](Cozem/read_me_image/extra1.png)
-![이것저것](Cozem/read_me_image/extra2.png)
-
-
-## 피드백남기기
----
-* 페이지 제작자에게 피드백을 남기는 탭입니다.
-
-![피드백](Cozem/read_me_image/feedback1.png)
-![피드백](Cozem/read_me_image/feedback2.png)
-
+![login_success](image/login_complete.png)
